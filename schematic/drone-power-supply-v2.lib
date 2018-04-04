@@ -1,24 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# drone-power-supply-v2-rescue:GND-power
+# CAP_100nF_10V
 #
-DEF drone-power-supply-v2-rescue:GND-power #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "drone-power-supply-v2-rescue:GND-power" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# drone-power-supply-v2:CAP_100nF_10V
-#
-DEF ~drone-power-supply-v2:CAP_100nF_10V C 0 10 N N 1 F N
+DEF ~CAP_100nF_10V C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "drone-power-supply-v2:CAP_100nF_10V" 10 -80 50 H I L CNN
+F1 "CAP_100nF_10V" 10 -80 50 H I L CNN
 F2 "CAPC:CAPC1608X09N" 450 150 50 H I C CNN
 F3 "" 10 70 50 H I C CNN
 F4 "VJ0603Y104JXQPW1BC" 450 250 50 H I C CNN "MFN"
@@ -34,11 +21,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:CAP_10uF_63V
+# CAP_10uF_63V
 #
-DEF ~drone-power-supply-v2:CAP_10uF_63V C 0 10 N N 1 F N
+DEF ~CAP_10uF_63V C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "drone-power-supply-v2:CAP_10uF_63V" 10 -80 50 H I L CNN
+F1 "CAP_10uF_63V" 10 -80 50 H I L CNN
 F2 "CAPC:CAPC3225X25N" 450 150 50 H I C CNN
 F3 "" 10 70 50 H I C CNN
 F4 "GRM32ER71J106KA12L" 450 250 50 H I C CNN "MFN"
@@ -54,11 +41,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:CAP_39pF_16V
+# CAP_39pF_16V
 #
-DEF ~drone-power-supply-v2:CAP_39pF_16V C 0 10 N N 1 F N
+DEF ~CAP_39pF_16V C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "drone-power-supply-v2:CAP_39pF_16V" 10 -80 50 H I L CNN
+F1 "CAP_39pF_16V" 10 -80 50 H I L CNN
 F2 "CAPC:CAPC1608X09N" 450 150 50 H I C CNN
 F3 "" 10 70 50 H I C CNN
 F4 "C0603C390J5GACTU" 450 250 50 H I C CNN "MFN"
@@ -74,11 +61,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:CAP_47uF_16V
+# CAP_47uF_16V
 #
-DEF ~drone-power-supply-v2:CAP_47uF_16V C 0 10 N N 1 F N
+DEF ~CAP_47uF_16V C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "drone-power-supply-v2:CAP_47uF_16V" 10 -80 50 H I L CNN
+F1 "CAP_47uF_16V" 10 -80 50 H I L CNN
 F2 "CAPC:CAPC3225X25N" 450 150 50 H I C CNN
 F3 "" 10 70 50 H I C CNN
 F4 "EMK325BJ476MM-T" 450 250 50 H I C CNN "MFN"
@@ -94,11 +81,31 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:CAP_8200pF_10V
+# CAP_6800pF_10V
 #
-DEF ~drone-power-supply-v2:CAP_8200pF_10V C 0 10 N N 1 F N
+DEF ~CAP_6800pF_10V C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "drone-power-supply-v2:CAP_8200pF_10V" 10 -80 50 H I L CNN
+F1 "CAP_6800pF_10V" 10 -80 50 H I L CNN
+F2 "CAPC:CAPC1608X09N" 450 150 50 H I C CNN
+F3 "" 10 70 50 H I C CNN
+F4 "VJ0603Y682MXQPW1BC" 450 250 50 H I C CNN "MFN"
+$FPLIST
+ *:C_*
+$ENDFPLIST
+DRAW
+T 900 -100 0 20 0 0 0 6800pF~10V Normal 0 C C
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CAP_8200pF_10V
+#
+DEF ~CAP_8200pF_10V C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "CAP_8200pF_10V" 10 -80 50 H I L CNN
 F2 "CAPC:CAPC1608X09N" 450 150 50 H I C CNN
 F3 "" 10 70 50 H I C CNN
 F4 "VJ0603Y822KXAPW1BC" 450 250 50 H I C CNN "MFN"
@@ -114,11 +121,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:CONN_XT60
+# CONN_XT60
 #
-DEF ~drone-power-supply-v2:CONN_XT60 J 0 40 Y Y 1 F N
+DEF ~CONN_XT60 J 0 40 Y Y 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "drone-power-supply-v2:CONN_XT60" 0 -200 50 H I C CNN
+F1 "CONN_XT60" 0 -200 50 H I C CNN
 F2 "drone-power-supply-v2:XT60" -100 0 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 F4 "BATTERY" 200 300 50 H V C CNN "Silkscreen"
@@ -137,11 +144,11 @@ X POWER 2 -200 -100 150 R 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:D_B520C
+# D_B520C
 #
-DEF ~drone-power-supply-v2:D_B520C D 0 10 N N 1 F N
+DEF ~D_B520C D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "drone-power-supply-v2:D_B520C" -150 -80 50 H I L CNN
+F1 "D_B520C" -150 -80 50 H I L CNN
 F2 "DIOM:DIOM7162X25N" 100 -150 50 H I C CNN
 F3 "" 0 0 50 V I C CNN
 F4 "B520C-13-F" 50 150 50 H I C CNN "MFN"
@@ -162,11 +169,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:GND
+# GND
 #
-DEF drone-power-supply-v2:GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "drone-power-supply-v2:GND" 0 -150 50 H V C CNN
+F1 "GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -181,11 +188,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:L_15uH_5A
+# L_15uH_5A
 #
-DEF ~drone-power-supply-v2:L_15uH_5A L 0 10 N N 1 F N
+DEF ~L_15uH_5A L 0 10 N N 1 F N
 F0 "L" 30 40 50 H V L CNN
-F1 "drone-power-supply-v2:L_15uH_5A" 30 -40 50 H I L CNN
+F1 "L_15uH_5A" 30 -40 50 H I L CNN
 F2 "INDM:INDM125125X60N" -70 -60 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "SRR1260A-150M" 130 140 50 H I C CNN "MFN"
@@ -206,11 +213,11 @@ X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:L_8.2uH_4.5A
+# L_8.2uH_4.5A
 #
-DEF ~drone-power-supply-v2:L_8.2uH_4.5A L 0 10 N N 1 F N
+DEF ~L_8.2uH_4.5A L 0 10 N N 1 F N
 F0 "L" 30 40 50 H V L CNN
-F1 "drone-power-supply-v2:L_8.2uH_4.5A" 30 -40 50 H I L CNN
+F1 "L_8.2uH_4.5A" 30 -40 50 H I L CNN
 F2 "INDM:INDM7265X40N" -70 -60 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "SRP6540-8R2M" 130 140 50 H I C CNN "MFN"
@@ -231,11 +238,11 @@ X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:MOUNT_HOLE
+# MOUNT_HOLE
 #
-DEF ~drone-power-supply-v2:MOUNT_HOLE MT? 0 40 Y Y 1 F N
+DEF ~MOUNT_HOLE MT? 0 40 Y Y 1 F N
 F0 "MT?" 0 200 50 H I C CNN
-F1 "drone-power-supply-v2:MOUNT_HOLE" 0 -200 50 H I C CNN
+F1 "MOUNT_HOLE" 0 -200 50 H I C CNN
 F2 "MountingHole:MountingHole_3.2mm_M3_Pad" -100 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -245,11 +252,11 @@ X ~ 1 0 -150 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:POWER_PAD
+# POWER_PAD
 #
-DEF ~drone-power-supply-v2:POWER_PAD J 0 40 Y N 1 F N
+DEF ~POWER_PAD J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "drone-power-supply-v2:POWER_PAD" 0 -100 50 H I C CNN
+F1 "POWER_PAD" 0 -100 50 H I C CNN
 F2 "drone-power-supply-v2:PCB_WirePad_5mm" -100 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -266,11 +273,11 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_10.2K_1%
+# RES_10.2K_1%
 #
-DEF ~drone-power-supply-v2:RES_10.2K_1% R 0 10 N N 1 F N
+DEF ~RES_10.2K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_10.2K_1%" 30 -40 50 H I L CNN
+F1 "RES_10.2K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "RC0201FR-0710K2L" 130 120 50 H I C CNN "MFN"
@@ -285,11 +292,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_100K_1%
+# RES_100K_1%
 #
-DEF ~drone-power-supply-v2:RES_100K_1% R 0 10 N N 1 F N
+DEF ~RES_100K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_100K_1%" 30 -40 50 H I L CNN
+F1 "RES_100K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CPF0603F100KC1" 130 120 50 H I C CNN "MFN"
@@ -304,11 +311,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_13K_1%
+# RES_13K_1%
 #
-DEF ~drone-power-supply-v2:RES_13K_1% R 0 10 N N 1 F N
+DEF ~RES_13K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_13K_1%" 30 -40 50 H I L CNN
+F1 "RES_13K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "AC0603FR-0713KL" 130 120 50 H I C CNN "MFN"
@@ -323,11 +330,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_143K_1%
+# RES_143K_1%
 #
-DEF ~drone-power-supply-v2:RES_143K_1% R 0 10 N N 1 F N
+DEF ~RES_143K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_143K_1%" 30 -40 50 H I L CNN
+F1 "RES_143K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CR0603-FX-1433ELF" 130 120 50 H I C CNN "MFN"
@@ -342,11 +349,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_162K_1%
+# RES_162K_1%
 #
-DEF ~drone-power-supply-v2:RES_162K_1% R 0 10 N N 1 F N
+DEF ~RES_162K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_162K_1%" 30 -40 50 H I L CNN
+F1 "RES_162K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CRCW0603162KFKEA" 130 120 50 H I C CNN "MFN"
@@ -361,11 +368,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_18K_1%
+# RES_18K_1%
 #
-DEF ~drone-power-supply-v2:RES_18K_1% R 0 10 N N 1 F N
+DEF ~RES_18K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_18K_1%" 30 -40 50 H I L CNN
+F1 "RES_18K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "RN731JTTD1802F100" 130 120 50 H I C CNN "MFN"
@@ -380,11 +387,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_25.5K_1%
+# RES_25.5K_1%
 #
-DEF ~drone-power-supply-v2:RES_25.5K_1% R 0 10 N N 1 F N
+DEF ~RES_25.5K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_25.5K_1%" 30 -40 50 H I L CNN
+F1 "RES_25.5K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CPF0603F25K5C1" 130 120 50 H I C CNN "MFN"
@@ -399,11 +406,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_523K_1%
+# RES_523K_1%
 #
-DEF ~drone-power-supply-v2:RES_523K_1% R 0 10 N N 1 F N
+DEF ~RES_523K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_523K_1%" 30 -40 50 H I L CNN
+F1 "RES_523K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "AC0603FR-07523KL" 130 120 50 H I C CNN "MFN"
@@ -419,11 +426,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_53.6K_1%
+# RES_53.6K_1%
 #
-DEF ~drone-power-supply-v2:RES_53.6K_1% R 0 10 N N 1 F N
+DEF ~RES_53.6K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_53.6K_1%" 30 -40 50 H I L CNN
+F1 "RES_53.6K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CRCW060353K6FKEA" 130 120 50 H I C CNN "MFN"
@@ -438,11 +445,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_66.5K_1%
+# RES_66.5K_1%
 #
-DEF ~drone-power-supply-v2:RES_66.5K_1% R 0 10 N N 1 F N
+DEF ~RES_66.5K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_66.5K_1%" 30 -40 50 H I L CNN
+F1 "RES_66.5K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CPF0603F66K5C1" 130 120 50 H I C CNN "MFN"
@@ -457,11 +464,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:RES_84.5K_1%
+# RES_84.5K_1%
 #
-DEF ~drone-power-supply-v2:RES_84.5K_1% R 0 10 N N 1 F N
+DEF ~RES_84.5K_1% R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "drone-power-supply-v2:RES_84.5K_1%" 30 -40 50 H I L CNN
+F1 "RES_84.5K_1%" 30 -40 50 H I L CNN
 F2 "RESC:RESC1608X04N" -70 -80 50 H I C CNN
 F3 "" 30 20 50 H I C CNN
 F4 "CR0603-FX-8452ELF" 130 120 50 H I C CNN "MFN"
@@ -476,11 +483,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# drone-power-supply-v2:TPS54360DDA
+# TPS54360DDA
 #
-DEF drone-power-supply-v2:TPS54360DDA U 0 10 Y Y 1 F N
+DEF TPS54360DDA U 0 10 Y Y 1 F N
 F0 "U" -300 450 50 H V L CNN
-F1 "drone-power-supply-v2:TPS54360DDA" -300 350 50 H V L CNN
+F1 "TPS54360DDA" -300 350 50 H V L CNN
 F2 "SOIC:SOIC127P600X175_HS-9N" 50 -450 50 H I L CIN
 F3 "" 0 0 50 H I C CNN
 F4 "TPS54360DDA" -200 550 50 H I C CNN "MFN"

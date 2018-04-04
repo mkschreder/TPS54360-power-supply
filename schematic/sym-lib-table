@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name drone-power-supply-v2-rescue)(type Legacy)(uri ${KIPRJMOD}/drone-power-supply-v2-rescue.lib)(options "")(descr ""))
+  (lib (name drone-power-supply-v2)(type Legacy)(uri /data/hardware/drone-power-supply-v2/schematic/drone-power-supply-v2.lib)(options "")(descr ""))
 )
